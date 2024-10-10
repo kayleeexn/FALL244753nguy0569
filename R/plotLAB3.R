@@ -5,7 +5,7 @@
 #' @return A sophisticated plot
 #' @export
 #'
-#' @examples see LAB3
+#' @examples plot_tree <- function(data)
 
 plot_tree <- function(data) {
   plot(Height~BHDiameter, data = spruce.df,

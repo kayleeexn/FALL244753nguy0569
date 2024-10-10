@@ -1,0 +1,11 @@
+Package: FALL244753nguy0569
+Type: Package
+Title: R functions from the labs
+Version: 0.1.0
+Author: Kaylee Nguyen
+Maintainer: Kaylee Nguyen <kaylee.t.nguyen-1@ou.edu>
+Description: MMath 4753 functions detailed from LABS
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.3.2

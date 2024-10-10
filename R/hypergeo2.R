@@ -1,4 +1,3 @@
-
 #' Hypergeometric Experiment Simulation
 #'
 #' @param iter Integer, how many samplings are repeated, default 100
@@ -6,15 +5,12 @@
 #' @param r Integer, number of considered successes in the population, default 12
 #' @param n Integer, sample size, how many are drawn in each iteration, default 5
 #'
-#' @returnA table of proportions of successes from the hypergeometric distribution simulation.
+#' @return A table of proportions of successes from the hypergeometric distribution simulation.
 #'
 #' @export
 #'
 #' @examples
 #' myhyper(iter = 1000, N = 20, r = 12, n = 5)
-#' this represents the default settings of the simulation
-#' should print out a table of information
-
 myhyper = function(iter = 100, N = 20, r = 12, n = 5) {
   #make a matrix to hold samples, initialize filled with NA's
   sam.mat = matrix(NA, nr = n, nc = iter, byrow = TRUE)
