@@ -1,7 +1,5 @@
 #' Create BMI groups
 #'
-#' More detailed description,
-#'
 #' @param x Numerical vector
 #'
 #' @return Factor variable

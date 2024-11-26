@@ -2,31 +2,28 @@
 % Please edit documentation in R/nticketspackage.R
 \name{ntickets}
 \alias{ntickets}
-\title{Calculate Optimal Number of Tickets to Sell for an Overbooked Flight}
+\title{Optimal Number of Tickets Calculation}
 \usage{
 ntickets(N, gamma, p)
 }
 \arguments{
-\item{N}{Number of Seats on a flight.}
+\item{N}{The number of available seats or capacity of the event. Must be a positive integer.}
 
-\item{gamma}{Confidence level (e.g., 0.05 for 95% confidence).}
+\item{gamma}{The allowable risk of overbooking. A probability value between 0 and 1.}
 
-\item{p}{Probability of a passenger showing up.}
+\item{p}{The probability that a ticket holder attends the event. A value between 0 and 1.}
 }
 \value{
-A named list containing
-\describe{
-\item{nd}{the optimal number of tickets to sell based on discrete calculations.}
-  \item{nc}{the optimal number of tickets to sell based on continuous calculations.}
-  \item{N}{the number of seats available (input).}
-  \item{p}{probability that the passenger shows up (input).}
-  \item{gamma}{confidence level that the airline wants to achieve regarding the risk of overbooking (input).}
-}
+A list with the optimal number of tickets to sell for both discrete (`nd`) and continuous (`nc`) cases.
 }
 \description{
-This function calculates the optimal number of tickets to sell for an overbooked flight using both discrete and continuous approximations.
-It helps maximize revenue while minimizing the risk of overbooking.
+This function calculates the optimal number of tickets to sell for an event
+given the event capacity, risk tolerance (`gamma`), and probability of
+attendance (`p`). It computes both discrete and continuous approximations
+and plots the results for comparison.
 }
 \examples{
-ntickets(N = 400, gamma = 0.02, p = 0.95)
+# Example usage of ntickets function:
+result <- ntickets(N = 100, gamma = 0.02, p = 0.95)
+print(result)
 }

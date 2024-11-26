@@ -2,7 +2,7 @@
 #'
 #' Contains one function for creating BMI groups.
 #'
-#' @docType _PACKAGE
+#' "_PACKAGE"
 #'
 #' @author Kaylee Nguyen \email{kaylee.t.nguyen@ou.edu}
 #'

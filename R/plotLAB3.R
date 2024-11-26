@@ -1,11 +1,12 @@
 #' @title Random Plotting in LAB3
 #'
 #' @param data data gathered from spruce data frame
-#'
+#' @name plot_tree
 #' @return A sophisticated plot
 #' @export
 #'
 #' @examples plot_tree <- function(data)
+utils::globalVariables(c("BHDiameter", "Height", "spruce.df"))
 
 plot_tree <- function(data) {
   plot(Height~BHDiameter, data = spruce.df,

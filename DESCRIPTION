@@ -4,8 +4,10 @@ Title: R functions from the labs
 Version: 0.1.0
 Author: Kaylee Nguyen
 Maintainer: Kaylee Nguyen <kaylee.t.nguyen-1@ou.edu>
-Description: MMath 4753 functions detailed from LABS
+Description: This package contains R functions developed for MATH 4753 labs, providing tools for statistical analysis and simulations.
 License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
 RoxygenNote: 7.3.2
+Depends: 
+    R (>= 2.10)

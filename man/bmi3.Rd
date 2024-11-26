@@ -13,7 +13,7 @@ bmi3(x)
 Factor variable
 }
 \description{
-More detailed description,
+Create BMI groups
 }
 \examples{
 bmi.vals <- rnorm(n = 20, mean = 25, sd = 3)

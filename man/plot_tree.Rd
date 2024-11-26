@@ -3,9 +3,6 @@
 \name{plot_tree}
 \alias{plot_tree}
 \title{Random Plotting in LAB3}
-\usage{
-plot_tree(data)
-}
 \arguments{
 \item{data}{data gathered from spruce data frame}
 }
